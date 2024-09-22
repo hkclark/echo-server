@@ -4,7 +4,6 @@ package main
 import (
 	"bytes"
 	"embed"
-	"encoding/hex"
 	"fmt"
 	"io"
 	"net/http"
@@ -20,6 +19,7 @@ import (
 	"golang.org/x/net/http2"
 	"golang.org/x/net/http2/h2c"
 )
+//	"encoding/hex"
 
 func main() {
 	port := os.Getenv("PORT")
