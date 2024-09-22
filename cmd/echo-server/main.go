@@ -66,6 +66,7 @@ func handler(wr http.ResponseWriter, req *http.Request) {
 		buf.ReadFrom(req.Body) // nolint:errcheck
 
 		if buf.Len() != 0 {
+			// w := hex.Dumper(os.Stdout)
 			w := os.Stdout
 			w.Write(buf.Bytes()) // nolint:errcheck
 			w.Close()
